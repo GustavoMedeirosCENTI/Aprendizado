@@ -1,0 +1,563 @@
+/* using System;
+
+double A, B, C, AreaTriangulo, AreaCirculo, AreaTrapezio, AreaQuadrado, AreaRetangulo, pi;
+
+string[] resposta = Console.ReadLine().Split(' ');
+A = double.Parse(resposta[0]);
+B = double.Parse(resposta[1]);
+C = double.Parse(resposta[2]);
+
+pi = 3.14159;
+AreaTriangulo = 0.5 * A * C;
+AreaCirculo = pi * Math.Pow(C, 2);
+AreaTrapezio = (A + B) * C / 2.0;
+AreaQuadrado = Math.Pow(B, 2);
+AreaRetangulo = A * B;
+
+Console.WriteLine("TRIANGULO: " + AreaTriangulo.ToString("F3"));
+Console.WriteLine("CIRCULO: " + AreaCirculo.ToString("F3"));
+Console.WriteLine("TRAPEZIO: " + AreaTrapezio.ToString("F3"));
+Console.WriteLine("QUADRADO: " + AreaQuadrado.ToString("F3"));
+Console.WriteLine("RETANGULO: " + AreaRetangulo.ToString("F3")); 
+
+ ------------------------------------------------------------------------------------- */
+
+/* int valor1, valor2, valor3, maior1, maior2;
+
+string[] resposta = Console.ReadLine().Split(' ');
+valor1 = int.Parse(resposta[0]);
+valor2 =  int.Parse(resposta[1]);
+valor3 =  int.Parse(resposta[2]);
+
+maior1 = (valor1 + valor2 + Math.Abs(valor1 - valor2)) / 2;
+maior2 = (valor3 + maior1 + Math.Abs(maior1 - valor3)) / 2;
+
+Console.WriteLine(maior2 + " eh o maior");
+
+----------------------------------------------------------------------------------------- */
+
+/* using System;
+
+double pi, raio, area;
+
+pi = 3.14159;
+raio = double.Parse(Console.ReadLine());
+
+area = pi * Math.Pow(raio, 2);
+
+Console.WriteLine("A=" + area.ToString("F4"));
+-----------------------------------------------------------------------------------------*/
+
+/* using System;
+
+int idade, ano, mes, dia;
+
+idade = int.Parse(Console.ReadLine());
+ano = idade / 365;
+mes = (idade % 365) / 30;
+dia = idade - (ano * 365) - (mes * 30);
+
+Console.WriteLine(ano + " ano(s)");
+Console.WriteLine(mes + " mes(es)");
+Console.WriteLine(dia + " dia(s)");
+
+-------------------------------------------------------------------------- */
+
+/* using System;
+
+int ValorNota, nota100, nota50, nota20, nota10, nota5, nota2, nota1;
+
+ValorNota = int.Parse(Console.ReadLine());
+
+nota100 = ValorNota / 100;
+nota50 = (ValorNota % 100) / 50;
+nota20 = ((ValorNota % 100) % 50) / 20;
+nota10 = (((ValorNota % 100) % 50) % 20) / 10;
+nota5 = ((((ValorNota % 100) % 50) % 20) % 10) / 5;
+nota2 = (((((ValorNota % 100) % 50) % 20) % 10) % 5) / 2;
+nota1 = (((((ValorNota % 100) % 50) % 20) % 10) % 5) % 2;
+
+Console.WriteLine(ValorNota);
+Console.WriteLine(nota100 + " nota(s) de R$ 100,00");
+Console.WriteLine(nota50 + " nota(s) de R$ 50,00");
+Console.WriteLine(nota20 + " nota(s) de R$ 20,00");
+Console.WriteLine(nota10 + " nota(s) de R$ 10,00");
+Console.WriteLine(nota5 + " nota(s) de R$ 5,00");
+Console.WriteLine(nota2 + " nota(s) de R$ 2,00");
+Console.WriteLine(nota1 + " nota(s) de R$ 1,00");
+
+--------------------------------------------------------------------- */
+/* using System;
+using System.Globalization;
+
+double A, B, C, delta, r1, r2;
+
+String[] vet = Console.ReadLine().Split(' ');
+A = double.Parse(vet[0], CultureInfo.InvariantCulture);
+B = double.Parse(vet[1], CultureInfo.InvariantCulture);
+C = double.Parse(vet[2], CultureInfo.InvariantCulture);
+
+delta = Math.Pow(B, 2.0) - 4 * A * C;
+
+if (A == 0 || delta < 0.0)
+{
+    Console.WriteLine("Impossivel calcular");
+
+}
+else
+{
+    r1 = (-B + Math.Sqrt(delta)) / (2.0 * A);
+    r2 = (-B - Math.Sqrt(delta)) / (2.0 * A);
+
+    Console.WriteLine("R1 = " + r1.ToString("F5", CultureInfo.InvariantCulture));
+    Console.WriteLine("R2 = " + r2.ToString("F5", CultureInfo.InvariantCulture));
+}
+----------------------------------------------------------------------------------- */
+
+/* int A, B, C;
+
+String[] vet = Console.ReadLine().Split(' ');
+
+A = int.Parse(vet[0]);
+B = int.Parse(vet[1]);
+C = int.Parse(vet[2]);
+
+if (A < B && A < C)
+{
+    Console.WriteLine("MENOR = " + A);
+}
+else if (B < C)
+{
+    Console.WriteLine("MENOR = " + B);
+}
+else
+{
+    Console.WriteLine("MENOR = " + C);
+}
+--------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+// APRENDER SOBRE SWITCH CASE!!!
+// OLHAR RESOLUÇÃO DO PROBLEMA 1036 e 1035
+// APRENDER DEBUG CORRETAMENTE
+// CONCEITO POR TRAZ DOS CODIGOS (SIGNIFICADO DE CONSOLE., FUNÇÃO, ETC)
+// DUVIDAS SOBRE ARQUIVOS DO PROJETO
+
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+//using System;
+
+//int A, B, C, D;
+
+//string[] vet = Console.ReadLine().Split(' ');
+//A = int.Parse(vet[0]);
+//B = int.Parse(vet[1]);
+//C = int.Parse(vet[2]);
+//D = int.Parse(vet[3]);
+
+//if ((B > C) && (D > A) && ((C + D) > (A + B) && (C >= 0) && (D >= 0) && ((A % 2) == 0)))
+//{
+//    Console.WriteLine("Valores aceitos");
+//}
+//else
+//{
+//    Console.WriteLine("Valores nao aceitos");
+//}
+
+
+// using Aprendizado;
+
+//ExercicioTeste.Exercicios01();
+
+/* ----------------------------------------------------------------- */
+
+/*using System;
+
+int A, B;
+
+string[] vet = Console.ReadLine().Split(' ');
+A = int.Parse(vet[0]);
+B = int.Parse(vet[1]);
+
+if (A % B == 0 || B % A == 0)
+{
+    Console.WriteLine("Sao Multiplos");
+}
+else
+{
+    Console.WriteLine("Nao sao Multiplos");
+}
+
+-----------------------------------------------------------*/
+
+/* using System;
+
+int X = 0;
+int Y = 1;
+
+while (X != Y)
+{
+    string[] vet = Console.ReadLine().Split(' ');
+    X = int.Parse(vet[0]);
+    Y = int.Parse(vet[1]);
+    if (X < Y)
+    {
+        Console.WriteLine("Crescente");
+    }
+    else if (X > Y)
+    {
+        Console.WriteLine("Decrescente");
+    }
+}
+------------------------------------------------------------------------*/
+
+/* using System;
+
+int idade = int.Parse(Console.ReadLine());
+double MediaIdade = 0;
+int QntdPessoas = 0;
+
+if (idade < 0)
+{
+    Console.WriteLine("impossivel calcular");
+}
+
+while (idade > 0)
+{
+    MediaIdade += idade;
+    QntdPessoas += 1;
+
+    idade = int.Parse(Console.ReadLine());
+}
+Console.WriteLine( (MediaIdade / QntdPessoas).ToString("F2"));
+
+----------------------------------------------------------------------*/
+
+/* using System;
+
+int HoraInicial, HoraFinal, TotalHoras;
+
+string[] vet = Console.ReadLine().Split(' ');
+HoraInicial = int.Parse(vet[0]);
+HoraFinal = int.Parse(vet[1]);
+
+if (HoraFinal < HoraInicial)
+{
+    HoraFinal += 24;
+    TotalHoras = HoraFinal - HoraInicial;
+    Console.WriteLine("O JOGO DUROU " + TotalHoras + " HORAS(S)");
+}
+*/
+
+/* using System;
+
+double salario, reajuste, percentual, SalarioFinal, ReajusteFinal;
+
+salario = double.Parse(Console.ReadLine());
+
+if (salario <= 400.00)
+{
+    reajuste = (salario * 0.15);
+    SalarioFinal = reajuste + salario;
+    percentual = 0.15 * 100;
+}
+else if (salario > 400.00 && salario <= 800.00)
+{
+    reajuste = (salario * 0.12);
+    SalarioFinal = reajuste + salario;
+    percentual = 0.12 * 100;
+}
+else if (salario > 800.00 && salario <= 1200.00)
+{
+    reajuste = (salario * 0.10);
+    SalarioFinal = reajuste + salario;
+    percentual = 0.10 * 100;
+}
+else if (salario > 1200.00 && salario <= 2000.00)
+{
+    reajuste = (salario * 0.07);
+    SalarioFinal = reajuste + salario;
+    percentual = 0.07 * 100;
+}
+else
+{
+    reajuste = (salario * 0.04);
+    SalarioFinal = reajuste + salario;
+    percentual = 0.04 * 100;
+}
+
+Console.WriteLine("Novo salario: " + SalarioFinal.ToString("F2"));
+Console.WriteLine("Reajuste ganho: " + reajuste.ToString("F2"));
+Console.WriteLine("Em percentual: " + percentual + " %"); */
+
+
+// using System;
+
+//double numero;
+
+//numero = double.Parse(Console.ReadLine());
+
+//if (numero < 0 || numero > 100)
+//{
+//    Console.WriteLine("Fora de intervalo");
+//}
+//else if  (numero <= 25)
+//{
+//    Console.WriteLine("Intervalo [0,25]");
+//}
+//else if (numero <= 50)
+//{
+//    Console.WriteLine("Intervalo (25,50]");
+//}
+//else if (numero <= 75)
+//{
+//    Console.WriteLine("Intervalo (50,75]");
+//}
+//else if (numero <= 100)
+//{
+//    Console.WriteLine("Intervalo (75,100]");
+//}
+
+
+/* using System;
+
+string senha = (Console.ReadLine());
+
+while (senha != "2002")
+{
+    Console.WriteLine("Senha Invalida");
+    senha = (Console.ReadLine());
+}
+
+Console.WriteLine("Acesso Permitido"); */
+
+/* using System;
+
+int HoraInicial, HoraFinal, duracao;
+string[] resposta = Console.ReadLine().Split(' ');
+HoraInicial = int.Parse(resposta[0]);
+HoraFinal = int.Parse(resposta[1]);
+
+if (HoraInicial >= HoraFinal)
+{
+    HoraFinal += 24;
+    duracao = HoraFinal - HoraInicial;
+}
+else
+{
+    duracao = HoraFinal - HoraInicial;
+}
+
+Console.WriteLine("O JOGO DUROU " + duracao + " HORA (S)"); */
+
+/*using System;
+
+int HoraInicial, MinutoInicial, HoraFinal, MinutoFinal, DuracaoHora, DuracaoMinuto;
+string[] vet = Console.ReadLine().Split(' ');
+HoraInicial = int.Parse(vet[0]);
+MinutoInicial = int.Parse(vet[1]);
+HoraFinal = int.Parse(vet[2]);
+MinutoFinal = int.Parse(vet[3]);
+
+HoraInicial = HoraInicial * 60 + MinutoInicial;
+HoraFinal = HoraFinal * 60 + MinutoFinal;
+
+if (HoraInicial >= HoraFinal)
+{
+    HoraFinal += 1440;
+    DuracaoHora = HoraFinal - HoraInicial;
+
+    DuracaoMinuto = DuracaoHora % 60;
+    DuracaoHora /= 60;
+}
+else
+{
+    DuracaoHora = HoraFinal - HoraInicial;
+    DuracaoMinuto = DuracaoHora % 60;
+    DuracaoHora /= 60;
+}
+
+Console.WriteLine("O JOGO DUROU " + DuracaoHora + " HORA (S) E " + DuracaoMinuto + " MINUTO(S)"); */
+
+/* using System;
+
+string resposta1, resposta2, resposta3, animal;
+
+resposta1 = Console.ReadLine();
+
+if (resposta1 == "vertebrado")
+{
+    resposta2 = Console.ReadLine();
+    if (resposta2 == "ave")
+    {
+        resposta3 = Console.ReadLine();
+        if (resposta3 == "carnivoro")
+        {
+            animal = "aguia";
+        }
+        else
+        {
+            animal = "pomba";
+        }
+    }
+    else
+    {
+        resposta3 = Console.ReadLine();
+        if (resposta3 == "onivoro")
+        {
+            animal = "homem";
+        }
+        else
+        {
+            animal = "vaca";
+        }
+    }
+}
+else
+{
+    resposta2 = Console.ReadLine();
+    if (resposta2 == "inseto")
+    {
+        resposta3 = Console.ReadLine();
+        if (resposta3 == "hematafago")
+        {
+            animal = "pulga";
+        }
+        else
+        {
+            animal = "lagarta";
+        }
+    }
+    else
+    {
+        resposta3 = Console.ReadLine();
+        if (resposta3 == "hematofago")
+        {
+            animal = "sanguessuga";
+        }
+        else
+        {
+            animal = "minhoca";
+        }
+    }
+}
+
+Console.WriteLine(animal); */
+
+/* using System;
+
+int DDD;
+
+DDD = int.Parse(Console.ReadLine());
+
+switch (DDD)
+{
+    case 61:
+        Console.WriteLine("Brasilia");
+        break;
+    case 71:
+        Console.WriteLine("Salvador");
+        break;
+    case 11:
+        Console.WriteLine("Sao Paulo");
+        break;
+    case 21:
+        Console.WriteLine("Rio de Janeiro");
+        break;
+    case 32:
+        Console.WriteLine("Juiz de Fora");
+        break;
+    case 19:
+        Console.WriteLine("Campinas");
+        break;
+    case 27:
+        Console.WriteLine("Vitoria");
+        break;
+    case 31:
+        Console.WriteLine("Belo Horizonte");
+        break;
+    default:
+        Console.WriteLine("DDD nao cadastrado");
+        break;
+} */
+
+/* using System;
+
+double salario, salarioCalculado, imposto;
+salario = double.Parse(Console.ReadLine());
+
+if (salario <= 2000.00)
+{
+    Console.WriteLine("Isento");
+}
+else if (salario <= 3000.00)
+{
+    salarioCalculado = (salario - 2000.00);
+    imposto = 0.8 * salarioCalculado;
+    Console.WriteLine("R$ " + imposto.ToString("F2"));
+}
+else if (salario <= 4500.00)
+{
+    salarioCalculado = salario - 2000.00;
+    imposto = 0.18 * salarioCalculado;
+    Console.WriteLine("R$ " + imposto.ToString("F2"));
+}
+else
+{
+    salarioCalculado = (salario - 2000.00);
+    imposto = 0.28 * salarioCalculado;
+    Console.WriteLine("R$ " + imposto.ToString("F2")); 
+} */
+
+/* using System;
+
+int mes;
+
+mes = int.Parse(Console.ReadLine());
+
+switch (mes) {
+    case 1:
+        Console.WriteLine("January");
+        break;
+    case 2:
+        Console.WriteLine("February");
+        break;
+    case 3:
+        Console.WriteLine("March");
+        break;
+    case 4:
+        Console.WriteLine("April");
+        break;
+    case 5:
+        Console.WriteLine("May");
+        break;
+    case 6:
+        Console.WriteLine("June");
+        break;
+    case 7:
+        Console.WriteLine("July");
+        break;
+    case 8:
+        Console.WriteLine("August");
+        break;
+    case 9:
+        Console.WriteLine("September");
+        break;
+    case 10:
+        Console.WriteLine("October");
+        break;
+    case 11:
+        Console.WriteLine("November");
+        break;
+    case 12:
+        Console.WriteLine("December");
+        break;
+}/*/
